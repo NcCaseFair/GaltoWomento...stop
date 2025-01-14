@@ -1,276 +1,106 @@
-@import url( 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.google.com/fonts/nimvus = swap");
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nimvus'sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.autoplay{
+  content: 'mute';
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  font-size: -12px;
+  margin-left: 1000px;
+  bottom: 570px;
+
 }
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: url(../Play_Full_Game/images/e67a7e45061fc3fa2b8c075fba8b6a96.gif);
-    background-size: 98vmax;
-    transition: transform all 0.5s linear ease;
+  stroke-linecap: butt;
+  width: 72vw;
+  height: 100vh;
+  padding: 1rem;
+  background-image: url("./Goz.gif") ;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  justify-content: center;
+  font-size: 32px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+  position: absolute;
+  top: -20%;
+}
+.background img{
+  position: absolute;
+  transform: rotate(180deg);
+  left: 39.10%;
+  top: -227px;
+  border-radius: 5px;
+  z-index: -8;
+}
+.foregrab{
+  position: absolute;
+  transform: rotate(60deg);
+  left: 10%;
+  top: -400px;
+  border-radius: 5px;
+  z-index: -8;
+}
+.autoplay span{
+  position: absolute;
+  font-size: 16px;
+  color: whitesmoke;
+  font-family: monospace;
+  filter: brightness(125deg);
+  left: 77px;
+  opacity: 120%;
+  z-index: 4;
+  transform: translateY(-2px);
 
 }
-.generate img{
-    position: absolute;
-    border-radius: 5px;
-    font-size: 100px;
-    transform: translateX(1px);
-    top: -2%;
-    scale: 1;
-    width: 1000px;
-    image-rendering: optimizeSpeed;
-    opacity: 47%;
-    image-orientation: flip;
-    height: 950px;
+.splash-content img{
+ position: absolute;
+ z-index: 3;
+ transform: translateY(119px);
+ filter: opacity(10%);
+ border-radius: 5px;
+ left: 27%;
 }
-.wrapper {
-    cursor: pointer;
-    z-index: 3;
-    height: 800px;
-    width: 1050px;
-    background: transparent;
-    border-radius: 10px;
-    padding: 25px;
+.clock{
+  color: red;
 }
-.btnStyl img{
-    position: absolute;
-    z-index: 0;
-    transform: translateX(863px);
-    bottom: -21%;
-    width: 160px;
-    height: 100px;
-
+span#display{
+  line-height: 1;
+  font-weight: 300;
+  margin: 20px 0 6px -30px;
+  position: absolute;
+  color: transparent;
+  left: 881px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  animation: reverse;
+  bottom: -7%; 
 }
-#b1 img{
-    position: absolute;
-}
-.ruleStyl img{
-    position: absolute;
-}
-div#time{
+video{
     display: flex;
+    overflow-anchor: auto;
     position: absolute;
-    overflow: none;
-    z-index: 6;
-    transform: translateX(400px);
-    font-size: 18px;
-    color: #e4e4e4;
-    font-family: magneto;
-    border: 4px dashed black;
-    background: darkgray;
-    border-radius: 10px;
-    top: -1px;
+    transform: translateY(-1200px);
+    bottom: 60px;
+    right: 0;
+    src: format(no-repeat);
+    animation-duration: infinity inherit;
 }
-.card .back-view img{
-    max-width: 10px;
-    flex-wrap: wrap;
-}
-
-.bdog{
-    cursor: none;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    border-bottom: 20px;
-    position: absolute;
-    transform: translateX(-365px);
-    top: 120px;
-}
-.cards, .card, .view {
-    display: flex;
-    cursor: pointer;
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-items: center;
-    font-size: 900px;
-
-}
-.cards .card {
-    cursor: pointer;
-    position: relative;
-    perspective: 800px;
-    transform-style: preserve-3d;
-    border-radius: 7px;
-    height: calc(400% / 0 - 100px);
-    width: calc(400% / 0 - 100px);
-}
-.card .front-view{
-    font-size: 105px;
-}
-div.view.back-view img{
-    min-width: 112px;
-}
-.card .back-view{
-    transform: rotateY(-180deg);
-}
-
-.cards .card .view{
-    width: 70%;
-    height: 100%;
-    pointer-events: none;
-    user-select: none;
-    backface-visibility: hidden;
-    background: rgb(63, 31, 31);
-    border-radius: 7px;
-    transition: transform 0.25s linear ease;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);    
-}
-.front-view span{
-    content: '';
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: all 0.25s linear ease;
-    color: #fff;
-}
-.card .front-view span{
-    color: cadetblue;
-    transition: translate all 0.25s linear ease;
-    font-size: 90px;
-    background-color: rgba(red, #fff, 24, 1) linear rgb(grey, green, blue);
-    font-weight: 900;
-}
-
-.card .back-view img{
-    max-width: 50px;
-}
-.card.flip .front-view{
-    transform: rotateY(180deg);
-}
-.card.flip .back-view{
-    transform: rotateY(0);
-}
-.wrapper::after{
-    color: #e4e4e4;
-    transform: translateY(0);
-    opacity: 3;
-}
-.aware{
-    position: absolute;
-    display: flex;
-    font-size: 12px;
-    transform: translateX(960px);
-    margin-left: -47px;
-    bottom: -185px;
-}
-p{
-    display: flex;
-    opacity: 85%;
-    text-align: center;
-    cursor: pointer;
-    font-family: ravie;
-    position: absolute;
-    font-size: 30px;
-    width: 8%;
-    height: 10%;
-    transform: translateX(842px);
-    top: 940px;
-    border: 8px solid darkblue;
-    color: goldenrod;
-    background:  rgb(7, 15, 54);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
-     
-}
-button#playBTN {
-    cursor: pointer;
-    display: flex;
-    position: absolute;
-    font-size: 27px;
-    transform: translateX(700px);
-    top: 940px;
-    border: 4px solid darkblue;
-    color: greenyellow;
-    background:  rgb(7, 15, 54);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
-    font: lighter;
-    font-family: stencil;  
-}
-b{
-    cursor: pointer;
-    display: flex;
-    position: absolute;
-    font-size: 23px;
-    transform: translateX(580px);
-    left: none;
-    top: 940px;
-    border: 4px solid darkblue;
-    color: greenyellow;
-    background:  rgb(7, 15, 54);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
-    font: lighter;
-    font-family:  stencil;
-}
-h3{
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    font-size: 29px;
-    transform: translateX(200px);
-    top: "";
-    border: 4px solid #e4e3;
-    color: pink;
-    background:  rgb(63, 31, 31);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
-    font: lighter;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#timer {
-    cursor: pointer;
-    display: flex;
-    position: absolute;
-    font-size: 29px;
-    transform: translateX(-270px);
-    top: 22px;
-    border: 4px solid #e4e3;
-    color: lime;
-    background:  rgb(63, 31, 31);
-    border-radius: 5px;
-    box-shadow: 0 32px transparent,
-    0 9px 9px gold,
-    0 0 33px 3px yellow;
-    font: lighter;
-    font-family: 'Trebuchet MS';
-}
-bdi{
-    cursor: pointer;
-    display: flex;
-    position: absolute;
-    font-size: 29px;
-    transform: translateX(1200px);
-    top: 220px;
-    border: 4px solid #e4e3;
-    color: lime;
-    background:  rgb(63, 31, 31);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
-    font: lighter;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-h1{
-    display: flex;
-    position: absolute;
-    transform: translateX(1000px);
-    top: -2%;
-    text-align: center;
-    color: magenta;
-    background: blue;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
-    font: lighter;
-    font-family: Old English Text MT;
+.icons{
+  background: linear-gradient(135deg, goldenrod, gold, orange, -1px purple);
+  -webkit-background-clip: text;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
     animation: animate 1.5s linear infinite;
-    margin: 2p 13px 0px -1px;
 }
 @keyframes animate {
     100%{
@@ -279,4 +109,205 @@ h1{
         filter: brightness(71deg);
     }
 }
+#slot.inverted .icons{
+  animation: none;
+  filter: none;
+}
+.money img{
+  position: absolute;
+  z-index: 3;
+  margin-top: 265pt;
+  font-size: 8px;
+  left: 369px;
+  transform: translateY(267px);
+}
+.money img:hover{
+  display: flex;
+  transition: 13s ease;
+  transform: rotateX(-5deg);
+}
+.bdog img{
+  position: absolute;
+  transform: translateX(-410px);
+  top: 167px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 1300px) {
+  body {
+    background-image: url("./boavu.jpg");
+  }
+}
+.grid img{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform: translateX(140px);
+  z-index: -2;
+  bottom: -9.14%;
+  flex-wrap: wrap;
+}
+#img{
+  display: grid;
+}
+#reels {
+  cursor: progress;
+  pointer-events: none;
+  transform: translateX(170px);
+  border-radius: 5px;
+  display: flex;
+  width: 100vw;
+  height: calc((3 / 5) * 100vw);
+  max-height: calc(90vh - 100px - 40px);
+  max-width: calc((5 / 3) * (90vh - 0px - 40px));
+}
+.reel {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 20%;
+  height: 100%;
+}
+.reel > .icons > img {
+  border-radius: 5px;
+  width: calc(100% + 6px);
+  margin: -3px 0 -5px -3px;
+  height: auto;
 
+  /* enable gpu accelaration, fixes iOS flicker */
+  transform: translate3d(0, 0, gold);
+}
+#controls {
+  transform: translateX(170px);
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  padding-top: 135px;
+  border: none;
+  margin-bottom: -230px;
+  outline: none;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 30px;
+  border-radius: 5px;
+}
+#controls label {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+input#autoplay{
+  position: absolute;
+  right: 200px;
+  pointer-events: none;
+  display: none;
+}
+#controls label input#SPINS{
+  cursor: default;
+  pointer-events: none;
+  width: 20%;
+  height: 40px;
+  position: absolute;
+  background: red;
+  transform: translateX(200px);
+}
+#controls label input#SPINS::-webkit-inner-spin-button{
+  display: none;
+}
+.min-play p{
+  position: absolute;
+  transform: translateX(19px);
+  display: none;
+}
+input::focus{
+  color: red;
+}
+label{
+  line-height: 1;
+  font-weight: 300;
+  margin: 20px 0 6px -30px;
+  transform: translateX(-30px);
+  color: red;
+}
+p{
+  line-height: 1;
+  font-weight: 300;
+  margin: 20px 0 6px -30px;
+  content: "FREE SPINS";
+  color: whitesmoke;
+  text-transform: uppercase;
+  position: relative;
+  bottom: -160px;
+  transform: translateX(600px); 
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 40px;
+}
+#jackpot {
+  line-height: 1;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+span#jp{
+  position: sticky;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-wrap: wrap;
+  margin: 20px 0 6px -30px;
+  font-weight: 600;
+  opacity: 100%;
+  font-size: 40px;
+  font-family: ravie;
+  text-align: center;
+  margin-left: 20%;
+  z-index: 1;
+  transform: translateY(100px);
+  color: cadetblue;
+}
+#slot.inverted .reel {
+  transform: scaleY(-1);
+}
+#slot.inverted .reel > .icons > img {
+  transform: scaleY(-1);
+}
+button{
+  line-height: 0;
+  margin: 20px 0 6px -30px;
+  background-color: transparent;
+  color: lime;
+  font-size: 67px;
+  font-weight: 500;
+  transform: translateX(-30px);
+  transform: translateY(-10px);
+  border-color: red;
+  border-radius: 7px;
+  accent-color: none;
+  transition:  0.5s linear ease;
+  outline: none;
+} 
+button:hover{
+    cursor: pointer;
+    transition: 13s ease-in-out;
+    transform: rotateX(-45deg);
+}
+button:focus{
+  text-decoration: none;
+  display: none;
+}
+.echo button{
+  display: none;
+}
+abbr{
+  line-height: 1;
+  font-weight: 300;
+  margin: 20px 0 6px -30px;
+  content: "FREE SPINS";
+  color: Red;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -170px;
+  transform: translateX(630px);
+}

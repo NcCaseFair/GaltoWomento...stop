@@ -1,0 +1,220 @@
+@import url("https://googleapis.css? 400,500,600=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'consolas';
+	 
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}.wrapper{
+    position: absolute;
+    bottom: 230px;
+    left: 30px;
+    background: skyblue;
+    max-width: 365px;
+    border-radius: 14px;
+    text-align: center;
+    padding: 27px 25px 27px 25px;
+    padding-top: 5%;
+
+}
+.wrapper img{
+    max-width: 90px;
+    left: -90px;
+    bottom: 66%;
+}
+.wrapper .content{
+    margin-top: 10px;
+}.wrapper p{
+    display: block;
+}
+.con header{
+    font-size: 25px;
+    font-weight: 600;
+}
+.content p{
+    color: #858585;
+    margin: 5px 0 20px 0;
+}.content .cok{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cok button{
+    padding: 10px 20px;
+    background: #fcba7f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: antiquewhite;
+    cursor: pointer;
+    text-decoration: none;
+    
+}.cok s{
+    text-decoration: none;
+
+
+}.cok button:hover{
+    background: #fcba;
+    color: aliceblue;
+    text-decoration: none;
+}.cok .items{
+    margin: 0 10px;
+}
+.aqua
+{
+    position: relative;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.aqua::after
+{
+    cursor: default;
+    pointer-events: none;
+    content: "";
+    color: royalblue;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-45%);
+    width: 95%;
+    height: 5px;
+    border-radius: 5px;    
+}
+.percentBar
+{
+    position: relative;
+    font-weight: 500;
+    transform: translateX(-12px);
+    cursor: not-allowed;
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: orange;
+    border-radius: 1px;
+}
+code{
+    background: #858585;
+    width: 480px;
+    height: 1.94px;
+    border-radius: 25px;
+    display: block;
+    position: absolute;
+    opacity: 32%;
+}
+.number
+{
+    position: absolute;
+    display: none;
+    top: -64px;
+    font-size: 8px;
+    right: -55px;
+    padding: 7px 7px;
+    color: gold;
+    border-radius: 67%;
+    border-bottom-left-radius: 19px;
+    box-shadow: inset 0 10px 5px rgba(0,0,0,0.075),
+    0 15px 8px rgba(0,0,0,0.05),
+    0 10px 15px rgba(0,0,0,0.05),
+    inset 0 -10px 15px rgba(255,255,255,0.9);
+    transition: 0.5s;
+}
+h2
+{
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    border: 3px solid paleturquoise;
+    border-radius: 35px 0;
+    border-left: 12px;
+    border-right: 12px;
+    font-weight: 500;
+    transform: translateX(110px);
+    top: 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    transition: 0s all linear;
+    transition-delay: 0s;
+    color: #bc0df1;
+    background: linear-gradient(135deg, lightblue, powderblue, turquoise, -1px transparent);
+    animation: animate 1.5s linear infinite;
+    margin: 2p 13px 0px -1px;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+        fill-opacity: 1;
+        filter: brightness(71deg);
+    }
+}
+h2::-webkit-progress-value{
+    display: none;
+}
+h2::-webkit-search-decoration{
+    display: none;
+}
+h2::before::-webkit-validation-bubble-text-block{
+    display: none;
+}
+p::before{
+    overflow: hidden;
+}
+p{
+    cursor: grabbing;
+    font-weight: 300;
+    position: absolute;
+    bottom: 200px;
+    margin: 2px 4px 0px -1px 5px;
+    border: 2px solid red;
+    font-size: larger;
+    text-decoration: solid;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+
+}
+.aqua img{
+    position: absolute;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+    left: -200px;
+    transform: translateY(-339px);
+}
+p
+{
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0s all linear;
+    transition-delay: 0s;
+    cursor: grabbing;
+    font-weight: 300;
+    position: absolute;
+    bottom: 200px;
+    margin: 2px 4px 0px -1px 5px;
+    border: 2px solid red;
+    font-size: larger;
+    text-decoration: solid;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}

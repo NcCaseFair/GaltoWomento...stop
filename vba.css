@@ -1,0 +1,142 @@
+@import(nimvus:poppins wght=200,300,400,600,700, https://goole.com/api/_nimvus.pnp/ico);
+
+*{
+	padding: 0;
+	margin:0;
+	box-size: "inset";
+	font-family: 'alphasmoke';
+
+}body{
+
+	background: darkgrey;
+}
+
+
+.pine p{
+	display: flex;
+	position:absolute;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 67px;
+	color: plum; 
+	left: 45%;
+
+}
+
+a abbr{
+
+	display: flex;
+	position:absolute;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 67px;
+	color: yellow; 
+	left: 43%;
+	transform: translateY(492px);
+	font-family: 'impact';
+
+}
+.nipple img{
+
+	display: flex;
+	position:absolute;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	width: 1250px; 
+	left: 3%;
+	transform: translateY(22px);
+	transformation-style: preserve 3d;
+	border-radius: 14px;
+
+}a abbr{
+    background: linear-gradient(0deg red,green,blue);
+}
+a abbr{
+    animation: animate 5s linear infinite;
+    background-size: 200%;
+}
+@keyframes animate {
+    0%{
+        fill-opacity: calc(60%);
+    }100%{
+        filter: hue-rotate(180deg);
+    }
+}
+a abbr:hover{
+
+	color: red;
+	font-size: 75px;
+	transition: 19s solid ease out;
+
+}	
+.apple span p{
+	display: flex;
+	position:absolute;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 16px;
+	color: red;
+	border: 3px solid red;  
+	left: 30%;
+	transform: translateY(92px);
+	font-family: 'roboto';
+
+}
+.free-spins span p{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 40px;
+	color: goldenrod;
+	font-family: ravie;
+	text-decoration:wavy;
+	left: 37%;
+	transform: translateY(60px);
+}
+.free-spins{
+    animation: animate 5s linear infinite;
+    background-size: 200%;
+}
+@keyframes animate {
+    0%{
+        fill-opacity: calc(60%);
+    }100%{
+        filter: hue-rotate(180deg);
+    }
+}
+  
+.free-spins span abbr{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 30px;
+	color: rgb(63, 31, 31);
+	font-family: 'Luckiest Guy';
+	text-decoration:wavy;
+	left: 44%;
+	transform: translateY(120px);
+}.free-spins span h2{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 43.7px;
+	color: green;
+	font-family: 'curlz MT';
+	text-decoration:wavy;
+	left: 30%;
+	transform: translateY(275px);
+	z-index: 6;
+}.free-spins a{
+	text-decoration: none;
+}
+
