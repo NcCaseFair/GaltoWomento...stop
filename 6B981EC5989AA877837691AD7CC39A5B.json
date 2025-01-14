@@ -1,0 +1,138 @@
+{
+  "properties": {},
+  "messages": [
+    {
+      "level": "info",
+      "message": "AV1 decoder support: 0, WebMfDecoderCheck: not null, kMediaFoundationClearAV1Support enabled: 1, disable_av1_accelerated_decode_gpu_workaround: 0, av1_hw_decoder_support: 0, vp9_decoder_support: 0"
+    },
+    {
+      "level": "info",
+      "message": "kForceMFMediaEngineRenderer:No; kMediaFoundationClearPlayback:No; DCompDisabled:No; RemotePlaybackDisabled:No; DomainOverride:Uninitialized; CDMAvailable:Yes; MFOverrideEnabled:No; MFClearWorkaround:Enabled;CanUseVidSuperRes:No; IsOnBattery: Yes; BatteryExclusiveStart:No"
+    },
+    {
+      "level": "info",
+      "message": "FFmpegDemuxer: created audio stream, config codec: pcm, profile: unknown, bytes_per_channel: 2, channel_layout: STEREO, channels: 2, samples_per_second: 44100, sample_format: Signed 16-bit, bytes_per_frame: 4, seek_preroll: 0us, codec_delay: 0, has extra data: false, encryption scheme: Unencrypted, discard decoder delay: true, target_output_channel_layout: NONE, target_output_sample_format: Unknown sample format, has aac extra data: false"
+    },
+    {
+      "level": "info",
+      "message": "Selected FFmpegAudioDecoder for audio decoding, config: codec: pcm, profile: unknown, bytes_per_channel: 2, channel_layout: STEREO, channels: 2, samples_per_second: 44100, sample_format: Signed 16-bit, bytes_per_frame: 4, seek_preroll: 0us, codec_delay: 0, has extra data: false, encryption scheme: Unencrypted, discard decoder delay: true, target_output_channel_layout: STEREO, target_output_sample_format: Unknown sample format, has aac extra data: false"
+    },
+    {
+      "level": "info",
+      "message": "Effective playback rate changed from 0 to 1"
+    }
+  ],
+  "events": [
+    {
+      "timestamp": 33416.843746,
+      "value": {
+        "created": "2024-03-11 07:27:37.573473 UTC"
+      },
+      "displayTimestamp": "0.000",
+      "event": "kMediaLogCreated"
+    },
+    {
+      "timestamp": 33416.850138,
+      "value": {
+        "origin_url": "http://127.0.0.1:5500/"
+      },
+      "displayTimestamp": "0.006",
+      "event": "kWebMediaPlayerCreated"
+    },
+    {
+      "timestamp": 33416.853945,
+      "value": {
+        "url": "http://127.0.0.1:5500/Quil/Cymatics%20-%20Suitcase%20-%2087%20BPM%20A%20Min.wav"
+      },
+      "displayTimestamp": "0.010",
+      "event": "kLoad"
+    },
+    {
+      "timestamp": 33417.632684,
+      "value": {
+        "renderer_created": {
+          "renderer_engine": "Default",
+          "renderer_type": "RendererImpl"
+        }
+      },
+      "displayTimestamp": "0.789",
+      "event": "kRendererCreated"
+    },
+    {
+      "timestamp": 33417.644439,
+      "value": {
+        "pipeline_state": "kStarting"
+      },
+      "displayTimestamp": "0.801",
+      "event": "kPipelineStateChange"
+    },
+    {
+      "timestamp": 33417.664546,
+      "value": {
+        "duration": 300
+      },
+      "displayTimestamp": "0.821",
+      "event": "kDurationChanged"
+    },
+    {
+      "timestamp": 33417.848882,
+      "value": {
+        "pipeline_state": "kPlaying"
+      },
+      "displayTimestamp": "1.005",
+      "event": "kPipelineStateChange"
+    },
+    {
+      "timestamp": 33417.852914,
+      "value": {
+        "autoplay_decision": {
+          "effectively_muted": false,
+          "policy": "no-user-gesture-required",
+          "source": "attribute",
+          "was_blocked": false
+        }
+      },
+      "displayTimestamp": "1.009",
+      "event": "kAutoplayAttempt"
+    },
+    {
+      "timestamp": 33417.855037,
+      "value": {},
+      "displayTimestamp": "1.011",
+      "event": "kPlay"
+    },
+    {
+      "timestamp": 33417.851849,
+      "value": {
+        "pipeline_buffering_state": {
+          "for_suspended_start": false,
+          "state": "BUFFERING_HAVE_ENOUGH"
+        }
+      },
+      "displayTimestamp": "1.008",
+      "event": "kBufferingStateChanged"
+    },
+    {
+      "timestamp": 33444.453764,
+      "value": {
+        "audio_buffering_state": {
+          "state": "BUFFERING_HAVE_ENOUGH"
+        }
+      },
+      "displayTimestamp": "27.610",
+      "event": "kBufferingStateChanged"
+    },
+    {
+      "timestamp": 33444.480803,
+      "value": {
+        "pipeline_buffering_state": {
+          "for_suspended_start": false,
+          "state": "BUFFERING_HAVE_ENOUGH"
+        }
+      },
+      "displayTimestamp": "27.637",
+      "event": "kBufferingStateChanged"
+    }
+  ],
+  "errors": []
+}

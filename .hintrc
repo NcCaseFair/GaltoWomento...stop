@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "meta-charset-utf-8": "off",
+    "meta-viewport": "off",
+    "axe/structure": "off",
+    "compat-api/css": "off",
+    "axe/language": "off",
+    "axe/forms": "off",
+    "axe/aria": "off",
+    "axe/name-role-value": "off",
+    "apple-touch-icons": "off",
+    "manifest-file-extension": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 123",
+    "not ios_saf <= 17.4",
+    "not safari <= 17.4"
+  ]
+}

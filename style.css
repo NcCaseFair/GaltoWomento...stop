@@ -1,0 +1,282 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nimvus'sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(../Play_Full_Game/images/e67a7e45061fc3fa2b8c075fba8b6a96.gif);
+    background-size: 98vmax;
+    transition: transform all 0.5s linear ease;
+
+}
+.generate img{
+    position: absolute;
+    border-radius: 5px;
+    font-size: 100px;
+    transform: translateX(1px);
+    top: -2%;
+    scale: 1;
+    width: 1000px;
+    image-rendering: optimizeSpeed;
+    opacity: 47%;
+    image-orientation: flip;
+    height: 950px;
+}
+.wrapper {
+    cursor: pointer;
+    z-index: 3;
+    height: 800px;
+    width: 1050px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 25px;
+}
+.btnStyl img{
+    position: absolute;
+    z-index: 0;
+    transform: translateX(863px);
+    bottom: -21%;
+    width: 160px;
+    height: 100px;
+
+}
+#b1 img{
+    position: absolute;
+}
+.ruleStyl img{
+    position: absolute;
+}
+div#time{
+    display: flex;
+    position: absolute;
+    overflow: none;
+    z-index: 6;
+    transform: translateX(400px);
+    font-size: 18px;
+    color: #e4e4e4;
+    font-family: magneto;
+    border: 4px dashed black;
+    background: darkgray;
+    border-radius: 10px;
+    top: -1px;
+}
+.card .back-view img{
+    max-width: 10px;
+    flex-wrap: wrap;
+}
+
+.bdog{
+    cursor: none;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    border-bottom: 20px;
+    position: absolute;
+    transform: translateX(-365px);
+    top: 120px;
+}
+.cards, .card, .view {
+    display: flex;
+    cursor: pointer;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    font-size: 900px;
+
+}
+.cards .card {
+    cursor: pointer;
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    border-radius: 7px;
+    height: calc(400% / 0 - 100px);
+    width: calc(400% / 0 - 100px);
+}
+.card .front-view{
+    font-size: 105px;
+}
+div.view.back-view img{
+    min-width: 112px;
+}
+.card .back-view{
+    transform: rotateY(-180deg);
+}
+
+.cards .card .view{
+    width: 70%;
+    height: 100%;
+    pointer-events: none;
+    user-select: none;
+    backface-visibility: hidden;
+    background: rgb(63, 31, 31);
+    border-radius: 7px;
+    transition: transform 0.25s linear ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);    
+}
+.front-view span{
+    content: '';
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: all 0.25s linear ease;
+    color: #fff;
+}
+.card .front-view span{
+    color: cadetblue;
+    transition: translate all 0.25s linear ease;
+    font-size: 90px;
+    background-color: rgba(red, #fff, 24, 1) linear rgb(grey, green, blue);
+    font-weight: 900;
+}
+
+.card .back-view img{
+    max-width: 50px;
+}
+.card.flip .front-view{
+    transform: rotateY(180deg);
+}
+.card.flip .back-view{
+    transform: rotateY(0);
+}
+.wrapper::after{
+    color: #e4e4e4;
+    transform: translateY(0);
+    opacity: 3;
+}
+.aware{
+    position: absolute;
+    display: flex;
+    font-size: 12px;
+    transform: translateX(960px);
+    margin-left: -47px;
+    bottom: -185px;
+}
+p{
+    display: flex;
+    opacity: 85%;
+    text-align: center;
+    cursor: pointer;
+    font-family: ravie;
+    position: absolute;
+    font-size: 30px;
+    width: 8%;
+    height: 10%;
+    transform: translateX(842px);
+    top: 940px;
+    border: 8px solid darkblue;
+    color: goldenrod;
+    background:  rgb(7, 15, 54);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+     
+}
+button#playBTN {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    font-size: 27px;
+    transform: translateX(700px);
+    top: 940px;
+    border: 4px solid darkblue;
+    color: greenyellow;
+    background:  rgb(7, 15, 54);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+    font: lighter;
+    font-family: stencil;  
+}
+b{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    font-size: 23px;
+    transform: translateX(580px);
+    left: none;
+    top: 940px;
+    border: 4px solid darkblue;
+    color: greenyellow;
+    background:  rgb(7, 15, 54);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+    font: lighter;
+    font-family:  stencil;
+}
+h3{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    font-size: 29px;
+    transform: translateX(200px);
+    top: "";
+    border: 4px solid #e4e3;
+    color: pink;
+    background:  rgb(63, 31, 31);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+    font: lighter;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#timer {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    font-size: 29px;
+    transform: translateX(-270px);
+    top: 22px;
+    border: 4px solid #e4e3;
+    color: lime;
+    background:  rgb(63, 31, 31);
+    border-radius: 5px;
+    box-shadow: 0 32px transparent,
+    0 9px 9px gold,
+    0 0 33px 3px yellow;
+    font: lighter;
+    font-family: 'Trebuchet MS';
+}
+bdi{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    font-size: 29px;
+    transform: translateX(1200px);
+    top: 220px;
+    border: 4px solid #e4e3;
+    color: lime;
+    background:  rgb(63, 31, 31);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+    font: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    display: flex;
+    position: absolute;
+    transform: translateX(1000px);
+    top: -2%;
+    text-align: center;
+    color: magenta;
+    background: blue;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+    font: lighter;
+    font-family: Old English Text MT;
+    animation: animate 1.5s linear infinite;
+    margin: 2p 13px 0px -1px;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+        fill-opacity: 1;
+        filter: brightness(71deg);
+    }
+}
+
